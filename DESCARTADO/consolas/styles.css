@@ -1,0 +1,92 @@
+body {
+    font-family: 'Press Start 2P', cursive;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .navbar {
+    background-color: #ffcc00;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-brand .logo {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+  }
+  
+  .navbar-brand, .nav-link {
+    color: #000 !important;
+  }
+  
+  .nav-link:hover {
+    color: #000 !important;
+  }
+  
+  .card {
+    margin-bottom: 1.5rem;
+    background-color: #333;
+    border: 2px solid #ffcc00;
+    border-radius: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+  
+  .card-img-top {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .footer {
+    background-color: #ffcc00;
+    color: #000;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer h2 {
+    font-size: 1.2rem;
+  }
+  
+  .newsletter {
+    text-align: left;
+  }
+  
+  .social-media {
+    text-align: right;
+  }
+  
+  .social-media ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .social-media ul li {
+    display: inline;
+    margin: 0 10px;
+  }
+  
+  .social-media ul li a {
+    color: #000;
+    font-size: 50px;
+    text-decoration: none;
+  }
+  
+  .social-media ul li a:hover {
+    color: #fff;
+  }

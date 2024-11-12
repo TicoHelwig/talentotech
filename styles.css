@@ -1,0 +1,502 @@
+/* Variables Globales */
+:root {
+  --img-height: 400px;  /* Ajusta la altura de las imágenes */
+  --img-padding: 10px;   /* Padding adicional para el carrusel */
+  --primary-color: #ffcc00; /* Color principal */
+  --background-color: #000; /* Color de fondo */
+  --text-color: #fff; /* Color de texto */
+  --border-color: lightgray; /* Color del borde */
+}
+
+/* Estilos Generales */
+body {
+  font-family: 'Press Start 2P', cursive;
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.navbar {
+  background-color: var(--primary-color);
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.4);
+}
+
+.nav-link {
+  color: #000 !important;
+  padding: 10px;  /* Mejorar la interacción con los botones */
+  transition: color 0.3s ease;
+}
+
+.navbar-toggler-icon {
+  background-color: #000;  /* Hacer que el ícono del menú desplegable sea visible */
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand .logo {
+  width: 130px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.navbar-brand, .nav-link {
+  color: #000 !important;
+}
+
+.nav-link:hover {
+  color: #000 !important;
+}
+
+/* Estilos para el carrusel */
+.carousel-inner img {
+  max-height: 400px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.carousel-inner img, .card-img-top {
+  aspect-ratio: 16/9;
+}
+
+.card {
+  background-color: #333;
+  border: 2px solid var(--primary-color);
+  border-radius: 10px;  /* Bordes redondeados para un toque más suave */
+  box-shadow: 0px 4px 6px rgba(0,0,0,0.2); /* Añadir sombra para profundidad */
+}
+
+.card-img-top {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Ajusta el margen superior para crear espacio entre la imagen y el botón */
+.btn-primary {
+  margin-top: 15px;
+}
+
+/* Margen inferior para las cards */
+.container {
+  margin-bottom: 1rem; /* Ajusta este valor según necesites */
+}
+/* Estilos para el footer */
+.footer {
+  background-color: var(--primary-color);
+  color: #000;
+  padding: 20px 0;
+}
+
+/* Estilos para el texto del footer */
+.footer h2 {
+  font-size: 1.2rem; /* Ajusta el tamaño del texto */
+}
+
+/* Redes sociales */
+/* Estilo para la sección de redes sociales */
+.social-media {
+  text-align: center; /* Centra los iconos */
+  padding: 10px 0;
+}
+
+.social-media ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* Alinea los iconos al centro */
+}
+
+.social-media ul li {
+  margin: 0 15px; /* Espacio entre los iconos */
+}
+
+/* Estilo para los iconos de redes sociales */
+.social-media ul li a {
+  color: #000; /* Color inicial */
+  font-size: 50px; /* Tamaño del icono */
+  text-decoration: none;
+  transition: color 0.3s ease; /* Transición suave para el cambio de color */
+}
+
+:root {
+  --hover-color: #fff;
+}
+
+.social-media ul li a:hover {
+  color: var(--hover-color);
+}
+
+.newsletter form {
+  width: 100%;  /* Hacer que el formulario ocupe todo el ancho disponible */
+  max-width: 500px;  /* Limitar el ancho máximo */
+  display: flex;
+  justify-content: space-between;  /* Espacio entre el campo de texto y el botón */
+}
+
+.newsletter input[type="email"] {
+  width: 80%;
+  padding: 10px;
+  border: 2px solid var(--primary-color);
+  border-radius: 5px;
+}
+
+.newsletter button[type="submit"] {
+  width: 20%;
+  padding: 10px;
+  background-color: var(--primary-color);
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.newsletter button[type="submit"]:hover {
+  background-color: var(--hover-color);
+}
+
+/* Estilos para el botón de compra */
+.button-49,
+.button-49:after {
+  width: 150px;
+  height: 76px;
+  line-height: 78px;
+  font-size: 20px;
+  font-family: 'Bebas Neue', sans-serif;
+  background: linear-gradient(45deg, transparent 5%, #FF013C 5%);
+  border: 0;
+  color: #fff;
+  letter-spacing: 3px;
+  box-shadow: 6px 0px 0px #000;
+  outline: transparent;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-49:after {
+  --slice-0: inset(50% 50% 50% 50%);
+  --slice-1: inset(80% -6px 0 0);
+  --slice-2: inset(50% -6px 30% 0);
+  --slice-3: inset(10% -6px 85% 0);
+  --slice-4: inset(40% -6px 43% 0);
+  --slice-5: inset(80% -6px 5% 0);
+  
+  content: 'Bites & Pieces';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #FF013C 5%);
+  text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
+  clip-path: var(--slice-0);
+}
+
+.button-49:hover:after {
+  animation: 1s glitch;
+  animation-timing-function: steps(2, end);
+}
+
+@keyframes glitch {
+  0% {
+    clip-path: var(--slice-1);
+    transform: translate(-20px, -10px);
+  }
+  10% {
+    clip-path: var(--slice-3);
+    transform: translate(10px, 10px);
+  }
+  20% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 10px);
+  }
+  30% {
+    clip-path: var(--slice-3);
+    transform: translate(0px, 5px);
+  }
+  40% {
+    clip-path: var(--slice-2);
+    transform: translate(-5px, 0px);
+  }
+  50% {
+    clip-path: var(--slice-3);
+    transform: translate(5px, 0px);
+  }
+  60% {
+    clip-path: var(--slice-4);
+    transform: translate(5px, 10px);
+  }
+  70% {
+    clip-path: var(--slice-2);
+    transform: translate(-10px, 10px);
+  }
+  80% {
+    clip-path: var(--slice-5);
+    transform: translate(20px, -10px);
+  }
+  90% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 0px);
+  }
+  100% {
+    clip-path: var(--slice-1);
+    transform: translate(0);
+  }
+}
+
+@media (min-width: 768px) {
+  .button-49,
+  .button-49:after {
+    width: 200px;
+    height: 86px;
+    line-height: 88px;
+  }
+}
+
+/* Sección general de formulario y ubicación */
+.form-location-section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.form-section {
+  background-color: #000;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 50px auto;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: #ffcc00 3px solid;
+}
+
+/* Etiquetas del formulario */
+label {
+  background-color: #000;
+  display: block;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/* Campos de entrada y textarea con efectos de interacción */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+  width: calc(100% - 22px);
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #ffffff;
+  border: 1px solid #999999;
+  border-radius: 5px;
+  box-sizing: border-box;
+  transition: background-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+  background-color: #d8e8f2;
+  color: black;
+}
+
+input[type="text"]:not(:placeholder-shown),
+input[type="email"]:not(:placeholder-shown),
+input[type="tel"]:not(:placeholder-shown),
+textarea:not(:placeholder-shown),
+select:not(:placeholder-shown) {
+  background-color: #ffffff;
+  color: black;
+}
+
+/* Estilos para el texto del placeholder */
+::placeholder {
+  color: rgb(7, 7, 7);
+}
+
+/* Botón de envío con efecto hover y cambio de estado */
+.submit-button {
+  background-color: gray;
+  color: white;
+  width: 100%;
+  max-width: 300px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #333;
+  border-radius: 5px;
+  font-weight: 400;
+  font-size: 1.25rem;
+  padding: 0;
+  margin: 20px auto;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+  cursor: not-allowed;
+}
+
+.submit-button.enabled {
+  background-color: #ffcc00;
+  cursor: pointer;
+}
+
+.submit-button:hover.enabled {
+  transform: scale(1.1);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Sección de ubicaciones */
+.locations-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.location {
+  min-width: 40%;
+  margin: 0 auto 20px auto;
+}
+
+.location iframe {
+  width: 100%;
+  height: 200px;
+  border: 0;
+}
+
+/* Texto de política de privacidad */
+.info-privacidad {
+  font-size: 7pt;
+}
+
+#politica {
+  color: #00800f;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .form-section form {
+    width: 70%;
+  }
+}
+
+@media (max-width: 480px) {
+  .form-section form {
+    width: 90%;
+  }
+}
+
+.locations {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.location {
+  width: 35%;
+  margin: 15px;
+}
+
+.location iframe {
+  width: 100%;
+  height: 300px;
+  border: 0;
+}
+
+@media (max-width: 768px) {
+  .location {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .location {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    margin-bottom: 1.5rem; /* Menor margen para dispositivos medianos */
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    margin-bottom: 1rem; /* Aún menor margen para dispositivos pequeños */
+  }
+}
+
+#títulos {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+/* Centra solo el contenedor del botón */
+.centered-button {
+  display: flex;
+  justify-content: center;
+}
+
+/* Estilo del botón */
+.submit-button {
+  background-color: var(--primary-color);
+  color: #000;
+  width: 100%;
+  max-width: 300px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  font-weight: 400;
+  font-size: 1.25rem;
+  padding: 0;
+  margin: 10px auto;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+.submit-button:hover {
+  transform: scale(1.1); /* Efecto de ampliación */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Añadir sombra */
+}
+
+/* Por defecto, el menú dropdown debe estar oculto */
+.dropdown-menu {
+  display: none;
+}
+
+/* Estilo adicional para el dropdown */
+.nav-item.dropdown {
+  position: relative;
+}
+
+/* Opcional, para mejorar la visibilidad del submenú */
+.nav-item.dropdown:hover > .nav-link {
+  color: #ffcc00;  /* Cambiar el color del texto al pasar el mouse */
+}
+
+.btn-primary:hover {
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.4);
+  background-color: #ffc107;
+}
