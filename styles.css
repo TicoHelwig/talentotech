@@ -1,0 +1,696 @@
+/* Variables Globales */
+:root {
+  --img-height: 400px;  /* Ajusta la altura de las imágenes */
+  --img-padding: 10px;   /* Padding adicional para el carrusel */
+  --primary-color: #ffcc00; /* Color principal */
+  --background-color: #000; /* Color de fondo */
+  --text-color: #fff; /* Color de texto */
+  --border-color: lightgray; /* Color del borde */
+}
+
+/* Estilos Generales */
+body {
+  font-family: 'Press Start 2P', cursive;
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.navbar {
+  background-color: var(--primary-color);
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.4);
+}
+
+.nav-link {
+  color: #000 !important;
+  padding: 10px;  /* Mejorar la interacción con los botones */
+  transition: color 0.3s ease;
+}
+
+.navbar-toggler-icon {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 5px;
+}
+
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand .logo {
+  width: 130px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.navbar-brand, .nav-link {
+  color: #000 !important;
+}
+
+.nav-link:hover {
+  color: #000 !important;
+}
+
+/* Estilos para el carrusel */
+.carousel-inner img {
+  max-height: 400px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.carousel-inner img, .card-img-top {
+  aspect-ratio: 16/9;
+}
+
+.card {
+  background-color: #333;
+  border: 2px solid var(--primary-color);
+  border-radius: 10px;  /* Bordes redondeados para un toque más suave */
+  box-shadow: 0px 4px 6px rgba(0,0,0,0.2); /* Añadir sombra para profundidad */
+}
+
+.card-img-top {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Ajusta el margen superior para crear espacio entre la imagen y el botón */
+.btn-primary {
+  margin-top: 15px;
+}
+
+/* Margen inferior para las cards */
+.container {
+  margin-bottom: 1rem; /* Ajusta este valor según necesites */
+}
+/* Estilos para el footer */
+.footer {
+  background-color: var(--primary-color);
+  color: #000;
+  padding: 20px 0;
+}
+
+/* Estilos para el texto del footer */
+.footer h2 {
+  font-size: 1.2rem; /* Ajusta el tamaño del texto */
+}
+
+/* Redes sociales */
+/* Estilo para la sección de redes sociales */
+.social-media {
+  text-align: center; /* Centra los iconos */
+  padding: 10px 0;
+}
+
+.social-media ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* Alinea los iconos al centro */
+}
+
+.social-media ul li {
+  margin: 0 15px; /* Espacio entre los iconos */
+}
+
+/* Estilo para los iconos de redes sociales */
+.social-media ul li a {
+  color: #000; /* Color inicial */
+  font-size: 50px; /* Tamaño del icono */
+  text-decoration: none;
+  transition: color 0.3s ease; /* Transición suave para el cambio de color */
+}
+
+:root {
+  --hover-color: #fff;
+}
+
+.social-media ul li a:hover {
+  color: var(--hover-color);
+}
+
+.newsletter form {
+  width: 100%;  /* Hacer que el formulario ocupe todo el ancho disponible */
+  max-width: 500px;  /* Limitar el ancho máximo */
+  display: flex;
+  justify-content: space-between;  /* Espacio entre el campo de texto y el botón */
+}
+
+.newsletter input[type="email"] {
+  width: 80%;
+  padding: 10px;
+  border: 2px solid var(--primary-color);
+  border-radius: 5px;
+}
+
+.newsletter button[type="submit"] {
+  width: 20%;
+  padding: 10px;
+  background-color: var(--primary-color);
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.newsletter button[type="submit"]:hover {
+  background-color: var(--hover-color);
+}
+
+/* Estilos para el botón de compra */
+.button-49,
+.button-49:after {
+  width: 150px;
+  height: 76px;
+  line-height: 78px;
+  font-size: 20px;
+  font-family: 'Bebas Neue', sans-serif;
+  background: linear-gradient(45deg, transparent 5%, #FF013C 5%);
+  border: 0;
+  color: #fff;
+  letter-spacing: 3px;
+  box-shadow: 6px 0px 0px #000;
+  outline: transparent;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-49:after {
+  --slice-0: inset(50% 50% 50% 50%);
+  --slice-1: inset(80% -6px 0 0);
+  --slice-2: inset(50% -6px 30% 0);
+  --slice-3: inset(10% -6px 85% 0);
+  --slice-4: inset(40% -6px 43% 0);
+  --slice-5: inset(80% -6px 5% 0);
+  
+  content: 'Bites & Pieces';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #FF013C 5%);
+  text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
+  clip-path: var(--slice-0);
+}
+
+.button-49:hover:after {
+  animation: 1s glitch;
+  animation-timing-function: steps(2, end);
+}
+
+@keyframes glitch {
+  0% {
+    clip-path: var(--slice-1);
+    transform: translate(-20px, -10px);
+  }
+  10% {
+    clip-path: var(--slice-3);
+    transform: translate(10px, 10px);
+  }
+  20% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 10px);
+  }
+  30% {
+    clip-path: var(--slice-3);
+    transform: translate(0px, 5px);
+  }
+  40% {
+    clip-path: var(--slice-2);
+    transform: translate(-5px, 0px);
+  }
+  50% {
+    clip-path: var(--slice-3);
+    transform: translate(5px, 0px);
+  }
+  60% {
+    clip-path: var(--slice-4);
+    transform: translate(5px, 10px);
+  }
+  70% {
+    clip-path: var(--slice-2);
+    transform: translate(-10px, 10px);
+  }
+  80% {
+    clip-path: var(--slice-5);
+    transform: translate(20px, -10px);
+  }
+  90% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 0px);
+  }
+  100% {
+    clip-path: var(--slice-1);
+    transform: translate(0);
+  }
+}
+
+@media (min-width: 768px) {
+  .button-49,
+  .button-49:after {
+    width: 200px;
+    height: 86px;
+    line-height: 88px;
+  }
+}
+
+/* Sección general de formulario y ubicación */
+.form-location-section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.form-section {
+  background-color: #000;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 50px auto;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: #ffcc00 3px solid;
+}
+
+/* Etiquetas del formulario */
+label {
+  background-color: #000;
+  display: block;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/* Campos de entrada y textarea con efectos de interacción */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+  width: calc(100% - 22px);
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #ffffff;
+  border: 1px solid #999999;
+  border-radius: 5px;
+  box-sizing: border-box;
+  transition: background-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+  background-color: #d8e8f2;
+  color: black;
+}
+
+input[type="text"]:not(:placeholder-shown),
+input[type="email"]:not(:placeholder-shown),
+input[type="tel"]:not(:placeholder-shown),
+textarea:not(:placeholder-shown),
+select:not(:placeholder-shown) {
+  background-color: #ffffff;
+  color: black;
+}
+
+/* Estilos para el texto del placeholder */
+::placeholder {
+  color: rgb(7, 7, 7);
+}
+
+/* Botón de envío con efecto hover y cambio de estado */
+.submit-button {
+  background-color: gray;
+  color: white;
+  width: 100%;
+  max-width: 300px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #333;
+  border-radius: 5px;
+  font-weight: 400;
+  font-size: 1.25rem;
+  padding: 0;
+  margin: 20px auto;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+  cursor: not-allowed;
+}
+
+.submit-button.enabled {
+  background-color: #ffcc00;
+  cursor: pointer;
+}
+
+.submit-button:hover.enabled {
+  transform: scale(1.1);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Sección de ubicaciones */
+.locations-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.location {
+  min-width: 40%;
+  margin: 0 auto 20px auto;
+}
+
+.location iframe {
+  width: 100%;
+  height: 200px;
+  border: 0;
+}
+
+/* Texto de política de privacidad */
+.info-privacidad {
+  font-size: 7pt;
+}
+
+#politica {
+  color: #00800f;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .form-section form {
+    width: 70%;
+  }
+}
+
+@media (max-width: 480px) {
+  .form-section form {
+    width: 90%;
+  }
+}
+
+.locations {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.location {
+  width: 35%;
+  margin: 15px;
+}
+
+.location iframe {
+  width: 100%;
+  height: 300px;
+  border: 0;
+}
+
+@media (max-width: 768px) {
+  .location {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .location {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    margin-bottom: 1.5rem; /* Menor margen para dispositivos medianos */
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    margin-bottom: 1rem; /* Aún menor margen para dispositivos pequeños */
+  }
+}
+
+#títulos {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+/* Centra solo el contenedor del botón */
+.centered-button {
+  display: flex;
+  justify-content: center;
+}
+
+/* Estilo del botón */
+.submit-button {
+  background-color: var(--primary-color);
+  color: #000;
+  width: 100%;
+  max-width: 300px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  font-weight: 400;
+  font-size: 1.25rem;
+  padding: 0;
+  margin: 10px auto;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+.submit-button:hover {
+  transform: scale(1.1); /* Efecto de ampliación */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Añadir sombra */
+}
+
+/* Por defecto, el menú dropdown debe estar oculto */
+.dropdown-menu {
+  display: none;
+}
+
+/* Estilo adicional para el dropdown */
+.nav-item.dropdown {
+  position: relative;
+}
+
+/* Opcional, para mejorar la visibilidad del submenú */
+.nav-item.dropdown:hover > .nav-link {
+  color: #ffcc00;  /* Cambiar el color del texto al pasar el mouse */
+}
+
+.btn-primary:hover {
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.4);
+  background-color: #ffc107;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,500&display=swap");
+
+:root {
+  --shiny-cta-bg: #000000;
+  --shiny-cta-bg-subtle: #1a1818;
+  --shiny-cta-fg: #ffffff;
+  --shiny-cta-highlight: #ffc107;
+  --shiny-cta-highlight-subtle: #8484ff;
+}
+
+@property --gradient-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@property --gradient-angle-offset {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@property --gradient-percent {
+  syntax: "<percentage>";
+  initial-value: 5%;
+  inherits: false;
+}
+
+@property --gradient-shine {
+  syntax: "<color>";
+  initial-value: white;
+  inherits: false;
+}
+
+.shiny-cta {
+  --animation: gradient-angle linear infinite;
+  --duration: 3s;
+  --shadow-size: 2px;
+  isolation: isolate;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  outline-offset: 4px;
+  padding: 1.25rem 2.5rem;
+  font-family: inherit;
+  font-size: 1.125rem;
+  line-height: 1.2;
+  border: 1px solid transparent;
+  border-radius: 360px;
+  color: var(--shiny-cta-fg);
+  background: linear-gradient(var(--shiny-cta-bg), var(--shiny-cta-bg))
+      padding-box,
+    conic-gradient(
+        from calc(var(--gradient-angle) - var(--gradient-angle-offset)),
+        transparent,
+        var(--shiny-cta-highlight) var(--gradient-percent),
+        var(--gradient-shine) calc(var(--gradient-percent) * 2),
+        var(--shiny-cta-highlight) calc(var(--gradient-percent) * 3),
+        transparent calc(var(--gradient-percent) * 4)
+      )
+      border-box;
+  box-shadow: inset 0 0 0 1px var(--shiny-cta-bg-subtle);
+
+  &::before,
+  &::after,
+  span::before {
+    content: "";
+    pointer-events: none;
+    position: absolute;
+    inset-inline-start: 50%;
+    inset-block-start: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+  }
+
+  &:active {
+    translate: 0 1px;
+  }
+}
+
+/* Dots pattern */
+.shiny-cta::before {
+  --size: calc(100% - var(--shadow-size) * 3);
+  --position: 2px;
+  --space: calc(var(--position) * 2);
+  width: var(--size);
+  height: var(--size);
+  background: radial-gradient(
+      circle at var(--position) var(--position),
+      white calc(var(--position) / 4),
+      transparent 0
+    )
+    padding-box;
+  background-size: var(--space) var(--space);
+  background-repeat: space;
+  mask-image: conic-gradient(
+    from calc(var(--gradient-angle) + 45deg),
+    black,
+    transparent 10% 90%,
+    black
+  );
+  border-radius: inherit;
+  opacity: 0.4;
+  z-index: -1;
+}
+
+/* Inner shimmer */
+.shiny-cta::after {
+  --animation: shimmer linear infinite;
+  width: 100%;
+  aspect-ratio: 1;
+  background: linear-gradient(
+    -50deg,
+    transparent,
+    var(--shiny-cta-highlight),
+    transparent
+  );
+  mask-image: radial-gradient(circle at bottom, transparent 40%, black);
+  opacity: 0.6;
+}
+
+.shiny-cta span {
+  z-index: 1;
+
+  &::before {
+    --size: calc(100% + 1rem);
+    width: var(--size);
+    height: var(--size);
+    box-shadow: inset 0 -1ex 2rem 4px var(--shiny-cta-highlight);
+    opacity: 0;
+  }
+}
+
+/* Animate */
+.shiny-cta {
+  --transition: 800ms cubic-bezier(0.25, 1, 0.5, 1);
+  transition: var(--transition);
+  transition-property: --gradient-angle-offset, --gradient-percent,
+    --gradient-shine;
+
+  &,
+  &::before,
+  &::after {
+    animation: var(--animation) var(--duration),
+      var(--animation) calc(var(--duration) / 0.4) reverse paused;
+    animation-composition: add;
+  }
+
+  span::before {
+    transition: opacity var(--transition);
+    animation: calc(var(--duration) * 1.5) breathe linear infinite;
+  }
+}
+
+.shiny-cta:is(:hover, :focus-visible) {
+  --gradient-percent: 20%;
+  --gradient-angle-offset: 95deg;
+  --gradient-shine: var(--shiny-cta-highlight-subtle);
+
+  &,
+  &::before,
+  &::after {
+    animation-play-state: running;
+  }
+
+  span::before {
+    opacity: 1;
+  }
+}
+
+@keyframes gradient-angle {
+  to {
+    --gradient-angle: 360deg;
+  }
+}
+
+@keyframes shimmer {
+  to {
+    rotate: 360deg;
+  }
+}
+
+@keyframes breathe {
+  from,
+  to {
+    scale: 1;
+  }
+  50% {
+    scale: 1.2;
+  }
+}
